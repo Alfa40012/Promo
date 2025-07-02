@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/chat",
+      "destination": "https://wa.me/201098256570",
+      "permanent": true
+    },
+    {
+      "source": "/app",
+      "destination": "https://www.rafal.giize.com",
+      "permanent": true
+    }
+  ]
+}
