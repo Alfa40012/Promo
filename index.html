@@ -23,104 +23,107 @@
     }
     .search-bar {
       background: #fff;
-      padding: 10px;
+      padding: 15px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       text-align: center;
       margin: 15px 0;
     }
     .search-bar input {
       width: 90%;
-      padding: 8px;
+      padding: 10px;
       border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 14px;
+      border-radius: 6px;
+      font-size: 16px;
       outline: none;
     }
     .container {
       max-width: 1200px;
-      margin: 15px auto;
+      margin: 20px auto;
       padding: 0 10px;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr); /* 4 منتجات جنب بعض */
-      gap: 15px;
+      grid-template-columns: repeat(2, 1fr); /* 2 منتجات في كل سطر */
+      gap: 20px;
+      margin-bottom: 20px;
     }
     .product {
       background: #fff;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       overflow: hidden;
       transition: transform 0.2s ease;
-      max-height: 300px;
       display: flex;
       flex-direction: column;
+      height: 100%; /* لضمان الارتفاع الكامل */
     }
     .product:hover {
-      transform: translateY(-3px);
+      transform: translateY(-5px);
     }
     .product img {
       width: 100%;
-      height: 150px; /* حجم أصغر */
+      height: 200px;
       object-fit: cover;
-      border-radius: 6px 6px 0 0;
+      border-radius: 8px 8px 0 0;
     }
     .info {
-      padding: 10px;
+      padding: 15px;
       flex-grow: 1;
       display: flex;
       flex-direction: column;
     }
     .info h2 {
-      font-size: 16px;
-      margin: 0 0 8px;
+      font-size: 24px; /* اسم المنتج ضخم كما طلبت */
+      margin: 0 0 10px;
       color: #e91e63;
+      font-weight: bold;
     }
     .price {
+      font-size: 18px;
       font-weight: bold;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       color: #25D366;
     }
     .note {
       color: green;
-      font-size: 12px;
+      font-size: 14px;
       margin-bottom: 5px;
     }
     .partner {
-      font-size: 11px;
+      font-size: 13px;
       color: #555;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
     .buy-btn {
       display: block;
       background: #25D366;
       color: white;
       text-align: center;
-      padding: 8px;
+      padding: 10px;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 0 0 6px 6px;
+      border-radius: 0 0 8px 8px;
       transition: background 0.3s;
-      margin-top: auto;
+      margin-top: auto; /* لضمان البقاء في الأسفل */
     }
     .buy-btn:hover {
       background: #1DA851;
     }
     .social-links {
       text-align: center;
-      margin: 20px 0;
-      padding: 10px;
+      margin: 30px 0;
+      padding: 15px;
       background: #fff;
-      border-radius: 6px;
+      border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     .social-links a {
-      margin: 0 8px;
+      margin: 0 10px;
       display: inline-block;
     }
     .social-links img {
-      width: 30px;
-      height: 30px;
+      width: 35px;
+      height: 35px;
       transition: transform 0.2s;
     }
     .social-links img:hover {
@@ -129,10 +132,10 @@
     footer {
       background: #fff;
       text-align: center;
-      padding: 10px;
-      font-size: 12px;
+      padding: 15px;
+      font-size: 14px;
       color: #777;
-      margin-top: 15px;
+      margin-top: 20px;
       border-top: 1px solid #eee;
     }
     footer a {
@@ -141,12 +144,9 @@
       font-weight: bold;
     }
     /* Responsive Design */
-    @media (max-width: 900px) {
-      .grid { grid-template-columns: repeat(2, 1fr); } /* 2 منتجات في الصف على شاشات متوسطة */
-    }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       .grid { grid-template-columns: 1fr; } /* 1 منتج في الصف على شاشات صغيرة */
-      .product img { height: 120px; }
+      .product img { height: 150px; }
       .search-bar input { width: 100%; }
       header img { max-height: 200px; }
     }
