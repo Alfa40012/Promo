@@ -1,85 +1,211 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>سوق الرسيفرات</title>
+  <meta charset="UTF-8" />
+  <title>سوق الرسيفرات – سعر موحّد 500 جنيه</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background: #f9f9f9;
-      padding: 20px;
-    }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .product {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      width: 300px;
-      padding: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .product img {
-      width: 100%;
-      height: 200px;
-      object-fit: contain;
-    }
-    .price {
-      font-size: 24px;
-      color: red;
-      font-weight: bold;
-      margin: 10px 0;
-    }
-    .order {
-      background: #25D366;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 18px;
-      display: inline-block;
-      margin-top: 10px;
-    }
-    .note {
-      color: #000;
-      margin-top: 5px;
-      font-size: 15px;
-    }
+    body          {font-family: 'Tahoma', sans-serif; background:#f7f7f7; margin:0; padding:20px;}
+    h1,h2         {text-align:center; margin:0 0 10px;}
+    h1            {font-size:28px;}
+    h2            {font-size:18px; color:#555;}
+    .grid         {display:flex; flex-wrap:wrap; gap:20px; justify-content:center;}
+    .card         {background:#fff; width:270px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden; text-align:center;}
+    .card img     {width:100%; height:180px; object-fit:contain; background:#fafafa;}
+    .card h3      {font-size:17px; margin:10px 0 6px;}
+    .price        {color:#d40000; font-size:22px; font-weight:bold; margin-bottom:4px;}
+    .note         {font-size:13px; color:#111; margin-bottom:10px;}
+    .btn          {display:block; background:#25d366; color:#fff; padding:10px 0; text-decoration:none; font-weight:bold; border-radius:0 0 10px 10px; transition:background .2s;}
+    .btn:hover    {background:#1ebe57;}
   </style>
 </head>
 <body>
 
-  <h2 style="text-align:center; font-size:28px;">🛰️ سوق الرسيفرات - السعر الموحد: <span style="color:red;">500 جنيه</span></h2>
-  <p style="text-align:center; font-weight:bold;">🚚 شحن ودفع عند الاستلام لجميع المحافظات</p>
+<h1>🛰️ سوق الرسيفرات – السعر الموحد <span style="color:#d40000;">500 جنيه</span></h1>
+<h2>🚚 شحن ودفع عند الاستلام لجميع المحافظات</h2>
 
-  <div class="products">
+<div class="grid">
 
-    <!-- المنتج الأول -->
-    <div class="product">
-      <img src="https://link-to-image1.png" alt="منتج 1">
-      <h3>Premium 12800 plus 4k</h3>
-      <div class="price">500 جنيه</div>
-      <a class="order" href="https://wa.me/201005854984?text=عايز+Premium+12800+plus+4k">اشترِ الآن عبر واتساب</a>
-      <div class="note">✅ شحن ودفع عند الاستلام</div>
-    </div>
-
-    <!-- المنتج الثاني -->
-    <div class="product">
-      <img src="https://link-to-image2.png" alt="منتج 2">
-      <h3>SENATOR HULK 8K 5G</h3>
-      <div class="price">500 جنيه</div>
-      <a class="order" href="https://wa.me/201005854984?text=عايز+SENATOR+HULK+8K+5G">اشترِ الآن عبر واتساب</a>
-      <div class="note">✅ شحن ودفع عند الاستلام</div>
-    </div>
-
-    <!-- كرر البلوك ده لكل منتج مع تغيير الصورة والاسم -->
-    
+  <!-- 1 -->
+  <div class="card">
+    <img src="IMAGE_URL_1" alt="Premium 12800 plus 4K">
+    <h3>Premium 12800 Plus 4K</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Premium+12800+Plus+4K">اشترِ الآن عبر واتساب</a>
   </div>
+
+  <!-- 2 -->
+  <div class="card">
+    <img src="IMAGE_URL_2" alt="SENATOR HULK 8K 5G">
+    <h3>SENATOR HULK 8K 5G</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+SENATOR+HULK+8K+5G">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 3 -->
+  <div class="card">
+    <img src="IMAGE_URL_3" alt="Receiver VIP Ultra">
+    <h3>Receiver VIP Ultra</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Receiver+VIP+Ultra">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 4 -->
+  <div class="card">
+    <img src="IMAGE_URL_4" alt="Combo IPTV HD">
+    <h3>Combo IPTV HD</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Combo+IPTV+HD">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 5 -->
+  <div class="card">
+    <img src="IMAGE_URL_5" alt="Mini Receiver Wi-Fi">
+    <h3>Mini Receiver Wi-Fi</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Mini+Receiver+Wi-Fi">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 6 -->
+  <div class="card">
+    <img src="IMAGE_URL_6" alt="Rafal IPTV Box">
+    <h3>Rafal IPTV Box</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Rafal+IPTV+Box">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 7 -->
+  <div class="card">
+    <img src="IMAGE_URL_7" alt="Nova HD 2025">
+    <h3>Nova HD 2025</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Nova+HD+2025">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 8 -->
+  <div class="card">
+    <img src="IMAGE_URL_8" alt="Super 4K + Wi-Fi">
+    <h3>Super 4K + Wi-Fi</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Super+4K+Wi-Fi">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 9 -->
+  <div class="card">
+    <img src="IMAGE_URL_9" alt="Edge 8K Pro">
+    <h3>Edge 8K Pro</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Edge+8K+Pro">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 10 -->
+  <div class="card">
+    <img src="IMAGE_URL_10" alt="Titanium IPTV Max">
+    <h3>Titanium IPTV Max</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Titanium+IPTV+Max">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 11 -->
+  <div class="card">
+    <img src="IMAGE_URL_11" alt="Galaxy HD Mini">
+    <h3>Galaxy HD Mini</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Galaxy+HD+Mini">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 12 -->
+  <div class="card">
+    <img src="IMAGE_URL_12" alt="Matrix 4K Combo">
+    <h3>Matrix 4K Combo</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Matrix+4K+Combo">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 13 -->
+  <div class="card">
+    <img src="IMAGE_URL_13" alt="Xtreme HD V2">
+    <h3>Xtreme HD V2</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Xtreme+HD+V2">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 14 -->
+  <div class="card">
+    <img src="IMAGE_URL_14" alt="Optimus Ultra">
+    <h3>Optimus Ultra</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Optimus+Ultra">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 15 -->
+  <div class="card">
+    <img src="IMAGE_URL_15" alt="Prime IPTV HD">
+    <h3>Prime IPTV HD</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Prime+IPTV+HD">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 16 -->
+  <div class="card">
+    <img src="IMAGE_URL_16" alt="Nano HD Receiver">
+    <h3>Nano HD Receiver</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Nano+HD+Receiver">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 17 -->
+  <div class="card">
+    <img src="IMAGE_URL_17" alt="Vision 4K Max">
+    <h3>Vision 4K Max</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Vision+4K+Max">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 18 -->
+  <div class="card">
+    <img src="IMAGE_URL_18" alt="Ultra Pro IPTV">
+    <h3>Ultra Pro IPTV</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Ultra+Pro+IPTV">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 19 -->
+  <div class="card">
+    <img src="IMAGE_URL_19" alt="Master HD Plus">
+    <h3>Master HD Plus</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Master+HD+Plus">اشترِ الآن عبر واتساب</a>
+  </div>
+
+  <!-- 20 -->
+  <div class="card">
+    <img src="IMAGE_URL_20" alt="Dragon 4K Pro">
+    <h3>Dragon 4K Pro</h3>
+    <div class="price">500 جنيه</div>
+    <div class="note">✅ شحن &amp; دفع عند الاستلام</div>
+    <a class="btn" href="https://wa.me/201005854984?text=أرغب+في+شراء+Dragon+4K+Pro">اشترِ الآن عبر واتساب</a>
+  </div>
+
+</div>
 
 </body>
 </html>
