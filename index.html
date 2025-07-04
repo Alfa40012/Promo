@@ -1,148 +1,166 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <title>سوق الدش | أقوى عروض الرسيفرات</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="رسيفرات عالية الجودة – شحن ودفع عند الاستلام لجميع المحافظات. تواصل عبر واتساب واشترِ الآن." />
-  <meta name="keywords" content="رسيفر, رسيفرات, IPTV, 4K, سوق الدش, شراء رسيفر, شحن عند الاستلام" />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <title>سوق الدش | عروض مميزة</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="رسيفرات IPTV بأقوى الأسعار - شحن ودفع عند الاستلام - بالتعاون مع البريد المصري." />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    *,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Cairo', Tahoma, Arial, sans-serif;
-      background: #f5f5f5;
-      color: #333;
-      line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      direction: rtl;
     }
-    header img { width: 100%; display: block; height: auto; }
+    header img {
+      width: 100%;
+      display: block;
+    }
     .search-bar {
-      position: sticky;
-      top: 0;
-      z-index: 10;
       background: #fff;
-      padding: 1rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,.05);
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
     }
     .search-bar input {
-      width: 100%;
-      padding: .75rem 1rem;
-      border: 1px solid #ddd;
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #ccc;
       border-radius: 6px;
-      font-size: 1rem;
+      font-size: 16px;
     }
-    .container { max-width: 1200px; margin: auto; padding: 1rem; }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 10px;
+    }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
     }
     .product {
       background: #fff;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,.08);
-      display: flex;
-      flex-direction: column;
-      transition: transform .2s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
     }
-    .product:hover { transform: translateY(-4px); }
+    .product:hover {
+      transform: translateY(-5px);
+    }
     .product img {
       width: 100%;
-      aspect-ratio: 1/1;
+      height: 200px;
       object-fit: cover;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
     }
     .info {
-      padding: 1rem;
-      flex-grow: 1;
+      padding: 15px;
     }
-    .info h2 { font-size: 1.1rem; margin-bottom: .4rem; }
-    .price { color: #e91e63; font-weight: 700; margin-bottom: .25rem; }
-    .note { font-size: .9rem; color: #388e3c; }
-    .partner { font-size: .85rem; color: #555; margin-top: .25rem; }
+    .info h2 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .note {
+      color: green;
+      font-size: 14px;
+    }
+    .partner {
+      font-size: 13px;
+      color: #555;
+      margin-top: 5px;
+    }
     .buy-btn {
       display: block;
-      text-align: center;
       background: #25D366;
-      color: #fff;
-      font-weight: 600;
-      padding: .8rem 0;
-      text-decoration: none;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
-      transition: background .2s ease;
-    }
-    .buy-btn:hover { background: #1cbb55; }
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 1.5rem 0;
-    }
-    .social-links img { width: 34px; height: 34px; }
-    footer {
+      color: white;
       text-align: center;
-      font-size: .9rem;
+      padding: 10px 0;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .buy-btn:hover {
+      background: #1DA851;
+    }
+    .social-links {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .social-links a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+    .social-links img {
+      width: 35px;
+      height: 35px;
+    }
+    footer {
+      background: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
       color: #777;
-      margin-top: auto;
-      padding: 1rem;
     }
     footer a {
       color: #25D366;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: bold;
     }
-    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="https://via.placeholder.com/1200x300?text=سوق+الدش" alt="سوق الدش" />
+  <img src="https://via.placeholder.com/1200x300?text=سوق+الدش+|+عروض+الرسيفرات" alt="سوق الدش">
 </header>
 
 <div class="search-bar">
-  <input type="text" placeholder="ابحث عن المنتجات..." aria-label="ابحث عن المنتجات">
+  <input type="text" placeholder="ابحث عن المنتجات...">
 </div>
 
-<main class="container">
-  <section class="grid">
+<div class="container">
+  <div class="grid">
     <!-- تكرار المنتج 8 مرات -->
-    <!-- يمكنك تغيير الصور والأسعار بحرية -->
-    <article class="product">
-      <img src="https://via.placeholder.com/400x400?text=Receiver+X5" alt="نيوجولد X5">
+    <!-- يمكنك تغيير الصورة والنصوص -->
+    <!-- منتج 1 -->
+    <div class="product">
+      <img src="https://via.placeholder.com/400x300?text=Receiver+X5" alt="نيوجولد X5">
       <div class="info">
         <h2>نيوجولد X5</h2>
         <div class="price">1200 جنيه</div>
         <div class="note">✅ شحن ودفع عند الاستلام</div>
-        <div class="partner">🚚 بالتعاون مع البريد المصرى</div>
+        <div class="partner">🚚 بالتعاون مع البريد المصري</div>
       </div>
-      <a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اشترِ الآن عبر واتساب</a>
-    </article>
-    
-    <!-- نسخ ولصق المنتج نفسه 7 مرات -->
-    <article class="product"><img src="https://via.placeholder.com/400x400?text=Receiver+X5" alt="نيوجولد X5"><div class="info"><h2>نيوجولد X5</h2><div class="price">1200 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div><div class="partner">🚚 بالتعاون مع البريد المصرى</div></div><a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اشترِ الآن عبر واتساب</a></article>
-    <article class="product"><img src="https://via.placeholder.com/400x400?text=Receiver+X5" alt="نيوجولد X5"><div class="info"><h2>نيوجولد X5</h2><div class="price">1200 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div><div class="partner">🚚 بالتعاون مع البريد المصرى</div></div><a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اشترِ الآن عبر واتساب</a></article>
-    <article class="product"><img src="https://via.placeholder.com/400x400?text=Receiver+X5" alt="نيوجولد X5"><div class="info"><h2>نيوجولد X5</h2><div class="price">1200 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div><div class="partner">🚚 بالتعاون مع البريد المصرى</div></div><a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اشترِ الآن عبر واتساب</a></article>
-    <article class="product"><img src="https://via.placeholder.com/400x400?text=Receiver+X5" alt="نيوجولد X5"><div class="info"><h2>نيوجولد X5</h2><div class="price">1200 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div><div class="partner">🚚 بالتعاون مع البريد المصرى</div></div><a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اشترِ الآن عبر واتساب</a></article>
-    <article class="product"><img src="https://via.placeholder.com/400x400?text=Receiver+X5" alt="نيوجولد X5"><div class="info"><h2>نيوجولد X5</h2><div class="price">1200 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div><div class="partner">🚚 بالتعاون مع البريد المصرى</div></div><a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اشترِ الآن عبر واتساب</a></article>
-    <article class="product"><img src="https://via.placeholder.com/400x400?text=Receiver+X5" alt="نيوجولد X5"><div class="info"><h2>نيوجولد X5</h2><div class="price">1200 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div><div class="partner">🚚 بالتعاون مع البريد المصرى</div></div><a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اشترِ الآن عبر واتساب</a></article>
-    <article class="product"><img src="https://via.placeholder.com/400x400?text=Receiver+X5" alt="نيوجولد X5"><div class="info"><h2>نيوجولد X5</h2><div class="price">1200 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div><div class="partner">🚚 بالتعاون مع البريد المصرى</div></div><a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اشترِ الآن عبر واتساب</a></article>
-  </section>
-</main>
+      <a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اطلب الآن عبر واتساب</a>
+    </div>
+
+    <!-- نسخ نفس المنتج 7 مرات -->
+    <div class="product"><img src="https://via.placeholder.com/400x300?text=Receiver+X5" alt="نيوجولد X5"><div class="info"><h2>نيوجولد X5</h2><div class="price">1200 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div><div class="partner">🚚 بالتعاون مع البريد المصري</div></div><a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اطلب الآن عبر واتساب</a></div>
+    <div class="product"><img src="https://via.placeholder.com/400x300?text=Receiver+X5" alt="نيوجولد X5"><div class="info"><h2>نيوجولد X5</h2><div class="price">1200 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div><div class="partner">🚚 بالتعاون مع البريد المصري</div></div><a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اطلب الآن عبر واتساب</a></div>
+    <div class="product"><img src="https://via.placeholder.com/400x300?text=Receiver+X5" alt="نيوجولد X5"><div class="info"><h2>نيوجولد X5</h2><div class="price">1200 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div><div class="partner">🚚 بالتعاون مع البريد المصري</div></div><a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اطلب الآن عبر واتساب</a></div>
+    <div class="product"><img src="https://via.placeholder.com/400x300?text=Receiver+X5" alt="نيوجولد X5"><div class="info"><h2>نيوجولد X5</h2><div class="price">1200 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div><div class="partner">🚚 بالتعاون مع البريد المصري</div></div><a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اطلب الآن عبر واتساب</a></div>
+    <div class="product"><img src="https://via.placeholder.com/400x300?text=Receiver+X5" alt="نيوجولد X5"><div class="info"><h2>نيوجولد X5</h2><div class="price">1200 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div><div class="partner">🚚 بالتعاون مع البريد المصري</div></div><a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اطلب الآن عبر واتساب</a></div>
+    <div class="product"><img src="https://via.placeholder.com/400x300?text=Receiver+X5" alt="نيوجولد X5"><div class="info"><h2>نيوجولد X5</h2><div class="price">1200 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div><div class="partner">🚚 بالتعاون مع البريد المصري</div></div><a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اطلب الآن عبر واتساب</a></div>
+    <div class="product"><img src="https://via.placeholder.com/400x300?text=Receiver+X5" alt="نيوجولد X5"><div class="info"><h2>نيوجولد X5</h2><div class="price">1200 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div><div class="partner">🚚 بالتعاون مع البريد المصري</div></div><a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اطلب الآن عبر واتساب</a></div>
+  </div>
+</div>
 
 <div class="social-links">
-  <a href="https://wa.me/201098256570" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب"></a>
+  <a href="https://wa.me/201098256570"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب"></a>
   <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="فيسبوك"></a>
-  <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="إنستجرام"></a>
+  <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="انستجرام"></a>
 </div>
 
 <footer>
-  للتواصل عبر واتساب: <a href="https://wa.me/201098256570" target="_blank">010098256570</a><br>
+  للتواصل عبر واتساب: <a href="https://wa.me/201098256570">01098256570</a><br>
   © 2025 سوق الدش – جميع الحقوق محفوظة
 </footer>
 
