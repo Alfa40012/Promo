@@ -23,104 +23,104 @@
     }
     .search-bar {
       background: #fff;
-      padding: 15px;
+      padding: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       text-align: center;
-      margin-bottom: 20px;
+      margin: 15px 0;
     }
     .search-bar input {
       width: 90%;
-      padding: 10px;
+      padding: 8px;
       border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 16px;
+      border-radius: 4px;
+      font-size: 14px;
       outline: none;
     }
     .container {
       max-width: 1200px;
-      margin: 20px auto;
+      margin: 15px auto;
       padding: 0 10px;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(4, 1fr); /* 4 منتجات جنب بعض */
+      gap: 15px;
     }
     .product {
       background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       overflow: hidden;
       transition: transform 0.2s ease;
-      max-height: 450px;
+      max-height: 300px;
       display: flex;
       flex-direction: column;
     }
     .product:hover {
-      transform: translateY(-5px);
+      transform: translateY(-3px);
     }
     .product img {
       width: 100%;
-      height: 200px;
+      height: 150px; /* حجم أصغر */
       object-fit: cover;
-      border-radius: 8px 8px 0 0;
+      border-radius: 6px 6px 0 0;
     }
     .info {
-      padding: 15px;
+      padding: 10px;
       flex-grow: 1;
       display: flex;
       flex-direction: column;
     }
     .info h2 {
-      font-size: 18px;
-      margin: 0 0 10px;
+      font-size: 16px;
+      margin: 0 0 8px;
       color: #e91e63;
     }
     .price {
       font-weight: bold;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       color: #25D366;
     }
     .note {
       color: green;
-      font-size: 14px;
+      font-size: 12px;
       margin-bottom: 5px;
     }
     .partner {
-      font-size: 13px;
+      font-size: 11px;
       color: #555;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
     .buy-btn {
       display: block;
       background: #25D366;
       color: white;
       text-align: center;
-      padding: 10px;
+      padding: 8px;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 0 0 8px 8px;
+      border-radius: 0 0 6px 6px;
       transition: background 0.3s;
-      margin-top: auto; /* Pushes button to bottom */
+      margin-top: auto;
     }
     .buy-btn:hover {
       background: #1DA851;
     }
     .social-links {
       text-align: center;
-      margin: 30px 0;
-      padding: 15px;
+      margin: 20px 0;
+      padding: 10px;
       background: #fff;
-      border-radius: 8px;
+      border-radius: 6px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     .social-links a {
-      margin: 0 10px;
+      margin: 0 8px;
       display: inline-block;
     }
     .social-links img {
-      width: 35px;
-      height: 35px;
+      width: 30px;
+      height: 30px;
       transition: transform 0.2s;
     }
     .social-links img:hover {
@@ -129,10 +129,10 @@
     footer {
       background: #fff;
       text-align: center;
-      padding: 15px;
-      font-size: 14px;
+      padding: 10px;
+      font-size: 12px;
       color: #777;
-      margin-top: 20px;
+      margin-top: 15px;
       border-top: 1px solid #eee;
     }
     footer a {
@@ -141,9 +141,12 @@
       font-weight: bold;
     }
     /* Responsive Design */
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: repeat(2, 1fr); } /* 2 منتجات في الصف على شاشات متوسطة */
+    }
     @media (max-width: 600px) {
-      .grid { grid-template-columns: 1fr; }
-      .product img { height: 150px; }
+      .grid { grid-template-columns: 1fr; } /* 1 منتج في الصف على شاشات صغيرة */
+      .product img { height: 120px; }
       .search-bar input { width: 100%; }
       header img { max-height: 200px; }
     }
@@ -152,7 +155,7 @@
 <body>
 
 <header>
-  <img src="https://via.placeholder.com/1200x300?text=سوق+الدش+|+عروض+الرسيفرات" alt="سوق الدش | عروض الرسيفرات">
+  <img src="https://j.top4top.io/p_34722a3jf0.png" alt="سوق الدش | عروض الرسيفرات">
 </header>
 
 <div class="search-bar">
@@ -171,7 +174,7 @@
         <div class="note">✅ شحن ودفع عند الاستلام</div>
         <div class="partner">🚚 بالتعاون مع البريد المصري</div>
       </div>
-      <a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اطلب الآن عبر واتساب</a>
+      <a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اطلب الآن</a>
     </div>
 
     <!-- المنتج 2 -->
@@ -183,7 +186,7 @@
         <div class="note">✅ شحن ودفع عند الاستلام</div>
         <div class="partner">🚚 بالتعاون مع البريد المصري</div>
       </div>
-      <a class="buy-btn" href="https://wa.me/p/9315229385219715/201098256570" target="_blank">اطلب الآن عبر واتساب</a>
+      <a class="buy-btn" href="https://wa.me/p/9315229385219715/201098256570" target="_blank">اطلب الآن</a>
     </div>
 
     <!-- المنتج 3 -->
@@ -195,7 +198,7 @@
         <div class="note">✅ شحن ودفع عند الاستلام</div>
         <div class="partner">🚚 بالتعاون مع البريد المصري</div>
       </div>
-      <a class="buy-btn" href="https://wa.me/p/9816598398373449/201098256570" target="_blank">اطلب الآن عبر واتساب</a>
+      <a class="buy-btn" href="https://wa.me/p/9816598398373449/201098256570" target="_blank">اطلب الآن</a>
     </div>
 
     <!-- المنتج 4 -->
@@ -207,7 +210,7 @@
         <div class="note">✅ شحن ودفع عند الاستلام</div>
         <div class="partner">🚚 بالتعاون مع البريد المصري</div>
       </div>
-      <a class="buy-btn" href="https://wa.me/p/9805831242784587/201098256570" target="_blank">اطلب الآن عبر واتساب</a>
+      <a class="buy-btn" href="https://wa.me/p/9805831242784587/201098256570" target="_blank">اطلب الآن</a>
     </div>
 
     <!-- المنتج 5 -->
@@ -219,7 +222,7 @@
         <div class="note">✅ شحن ودفع عند الاستلام</div>
         <div class="partner">🚚 بالتعاون مع البريد المصري</div>
       </div>
-      <a class="buy-btn" href="https://wa.me/p/24136556826003596/201098256570" target="_blank">اطلب الآن عبر واتساب</a>
+      <a class="buy-btn" href="https://wa.me/p/24136556826003596/201098256570" target="_blank">اطلب الآن</a>
     </div>
 
     <!-- المنتج 6 -->
@@ -231,7 +234,7 @@
         <div class="note">✅ شحن ودفع عند الاستلام</div>
         <div class="partner">🚚 بالتعاون مع البريد المصري</div>
       </div>
-      <a class="buy-btn" href="https://wa.me/p/30190481777266596/201098256570" target="_blank">اطلب الآن عبر واتساب</a>
+      <a class="buy-btn" href="https://wa.me/p/30190481777266596/201098256570" target="_blank">اطلب الآن</a>
     </div>
 
     <!-- المنتج 7 -->
@@ -243,7 +246,7 @@
         <div class="note">✅ شحن ودفع عند الاستلام</div>
         <div class="partner">🚚 بالتعاون مع البريد المصري</div>
       </div>
-      <a class="buy-btn" href="https://wa.me/p/30317418971206260/201098256570" target="_blank">اطلب الآن عبر واتساب</a>
+      <a class="buy-btn" href="https://wa.me/p/30317418971206260/201098256570" target="_blank">اطلب الآن</a>
     </div>
 
     <!-- المنتج 8 -->
@@ -255,7 +258,7 @@
         <div class="note">✅ شحن ودفع عند الاستلام</div>
         <div class="partner">🚚 بالتعاون مع البريد المصري</div>
       </div>
-      <a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اطلب الآن عبر واتساب</a>
+      <a class="buy-btn" href="https://wa.me/201098256570" target="_blank">اطلب الآن</a>
     </div>
 
   </div>
