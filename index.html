@@ -15,7 +15,6 @@
       direction: rtl;
     }
     header {
-      position: relative;
       width: 100%;
       height: 200px;
       overflow: hidden;
@@ -25,18 +24,7 @@
       height: 100%;
       object-fit: cover;
       object-position: center;
-    }
-    header h1 {
-      position: absolute;
-      top: 50%;
-      right: 50%;
-      transform: translate(50%, -50%);
-      background-color: rgba(0,0,0,0.5);
-      color: #fff;
-      padding: 12px 24px;
-      font-size: 20px;
-      border-radius: 10px;
-      text-align: center;
+      display: block;
     }
     .container {
       max-width: 1200px;
@@ -117,22 +105,10 @@
       text-decoration: none;
     }
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 16px;
-        padding: 8px 16px;
-      }
-      .info h2 {
-        font-size: 16px;
-      }
-      .price {
-        font-size: 18px;
-      }
-      .note {
-        font-size: 12px;
-      }
-      .buy-btn {
-        font-size: 14px;
-      }
+      .info h2 { font-size: 16px; }
+      .price { font-size: 18px; }
+      .note { font-size: 12px; }
+      .buy-btn { font-size: 14px; }
     }
   </style>
 </head>
@@ -140,12 +116,12 @@
 
 <header>
   <img src="https://a.top4top.io/p_3472t1h1g0.png" alt="سوق الدش">
-  <h1>🔥 عروض على 20 رسيفر – شحن ودفع عند الاستلام</h1>
 </header>
 
 <div class="container">
   <div class="grid">
-    <!-- منتج واحد - كرره 20 مرة وغير البيانات -->
+    <!-- تكرار المنتج 20 مرة مع تغيير الاسم والرابط والصورة -->
+    <!-- منتج 1 -->
     <div class="product">
       <img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر 1">
       <div class="info">
@@ -156,8 +132,30 @@
       <a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%201">اشترِ الآن عبر واتساب</a>
     </div>
 
-    <!-- انسخ هذا البلوك وغير الصورة والاسم والسعر لعمل 20 منتج -->
-    
+    <!-- انسخ هذا البلوك وغير الاسم والصورة واللينك -->
+    <!-- منتج 2 -->
+    <div class="product">
+      <img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر 2">
+      <div class="info">
+        <h2>رسيفر 2</h2>
+        <div class="price">510 جنيه</div>
+        <div class="note">✅ شحن ودفع عند الاستلام</div>
+      </div>
+      <a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%202">اشترِ الآن عبر واتساب</a>
+    </div>
+
+    <!-- منتج 3 إلى 20 -->
+    <!-- كرر هذا الجزء وعدّل الاسم والسعر -->
+    <!-- منتج 3 -->
+    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر 3"><div class="info"><h2>رسيفر 3</h2><div class="price">520 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=شراء%20رسيفر%203">اشترِ الآن عبر واتساب</a></div>
+    <!-- منتج 4 -->
+    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر 4"><div class="info"><h2>رسيفر 4</h2><div class="price">530 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=شراء%20رسيفر%204">اشترِ الآن عبر واتساب</a></div>
+    <!-- منتج 5 -->
+    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر 5"><div class="info"><h2>رسيفر 5</h2><div class="price">540 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=شراء%20رسيفر%205">اشترِ الآن عبر واتساب</a></div>
+    <!-- منتج 6 -->
+    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر 6"><div class="info"><h2>رسيفر 6</h2><div class="price">550 جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=شراء%20رسيفر%206">اشترِ الآن عبر واتساب</a></div>
+
+    <!-- أكمل إلى 20 بنفس الشكل -->
   </div>
 </div>
 
