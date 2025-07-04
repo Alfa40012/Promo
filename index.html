@@ -7,95 +7,157 @@
   <meta name="description" content="رسيفرات عالية الجودة – شحن ودفع عند الاستلام لجميع المحافظات. تواصل عبر واتساب واشترِ الآن.">
   <meta name="keywords" content="رسيفر, رسيفرات, IPTV, 4K, سوق الدش, شراء رسيفر, شحن عند الاستلام">
   <style>
-    body{margin:0;font-family:Tahoma,sans-serif;background:#f5f5f5;direction:rtl}
-    /* هيدر متناسق بالكامل */
-    header{
-      background:url('https://a.top4top.io/p_3472t1h1g0.png') center/cover no-repeat;
-      height:200px;display:flex;justify-content:center;align-items:center;color:#fff;text-shadow:1px 1px 3px #000}
-    header h1{background:rgba(0,0,0,.55);padding:12px 26px;border-radius:12px;font-size:24px;margin:0}
-
-    /* الشبكة */
-    .container{max-width:1200px;margin:25px auto;padding:0 15px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
-    .product{background:#fff;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.1);display:flex;flex-direction:column;overflow:hidden}
-    .product img{width:100%;height:230px;object-fit:cover}
-    .info{padding:14px;flex:1}
-    .info h2{font-size:18px;margin:6px 0 8px;color:#222}
-    .price{font-size:20px;color:#d32f2f;font-weight:bold;margin-bottom:6px}
-    .note{font-size:13px;color:#555;margin-bottom:10px}
-    .buy-btn{background:#25d366;color:#fff;text-align:center;padding:10px;font-weight:bold;text-decoration:none;border-top:1px solid #eee;border-radius:0 0 10px 10px;transition:.3s}
-    .buy-btn:hover{background:#128c7e}
-    footer{text-align:center;background:#222;color:#ccc;font-size:14px;padding:18px;margin-top:40px}
-    footer a{color:#4af;text-decoration:none}
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Tahoma', sans-serif;
+      background-color: #f9f9f9;
+      direction: rtl;
+    }
+    header {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
+    header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    header h1 {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      background-color: rgba(0,0,0,0.5);
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease-in-out;
+    }
+    .product:hover {
+      transform: scale(1.02);
+    }
+    .product img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .info {
+      padding: 15px;
+      flex: 1;
+    }
+    .info h2 {
+      font-size: 18px;
+      margin: 8px 0;
+      color: #222;
+      text-align: center;
+    }
+    .price {
+      font-size: 22px;
+      color: #d32f2f;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .note {
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .buy-btn {
+      display: block;
+      background-color: #25d366;
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      border-top: 1px solid #eee;
+      border-radius: 0 0 10px 10px;
+      transition: 0.3s;
+    }
+    .buy-btn:hover {
+      background-color: #128c7e;
+    }
+    footer {
+      text-align: center;
+      background: #222;
+      color: #ccc;
+      font-size: 14px;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #4af;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 16px;
+        padding: 8px 16px;
+      }
+      .info h2 {
+        font-size: 16px;
+      }
+      .price {
+        font-size: 18px;
+      }
+      .note {
+        font-size: 12px;
+      }
+      .buy-btn {
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
 
-<header><h1>🔥 عروض مميزة على 20 رسيفر – شحن ودفع عند الاستلام</h1></header>
+<header>
+  <img src="https://a.top4top.io/p_3472t1h1g0.png" alt="سوق الدش">
+  <h1>🔥 عروض على 20 رسيفر – شحن ودفع عند الاستلام</h1>
+</header>
 
 <div class="container">
   <div class="grid">
+    <!-- منتج واحد - كرره 20 مرة وغير البيانات -->
+    <div class="product">
+      <img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر 1">
+      <div class="info">
+        <h2>رسيفر 1</h2>
+        <div class="price">500 جنيه</div>
+        <div class="note">✅ شحن ودفع عند الاستلام</div>
+      </div>
+      <a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%201">اشترِ الآن عبر واتساب</a>
+    </div>
 
-    <!-- 1 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 1"><div class="info"><h2>رسيفر موديل 1</h2><div class="price">500&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%201">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 2 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 2"><div class="info"><h2>رسيفر موديل 2</h2><div class="price">510&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%202">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 3 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 3"><div class="info"><h2>رسيفر موديل 3</h2><div class="price">520&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%203">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 4 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 4"><div class="info"><h2>رسيفر موديل 4</h2><div class="price">530&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%204">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 5 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 5"><div class="info"><h2>رسيفر موديل 5</h2><div class="price">540&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%205">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 6 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 6"><div class="info"><h2>رسيفر موديل 6</h2><div class="price">550&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%206">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 7 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 7"><div class="info"><h2>رسيفر موديل 7</h2><div class="price">560&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%207">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 8 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 8"><div class="info"><h2>رسيفر موديل 8</h2><div class="price">570&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%208">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 9 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 9"><div class="info"><h2>رسيفر موديل 9</h2><div class="price">580&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%209">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 10 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 10"><div class="info"><h2>رسيفر موديل 10</h2><div class="price">590&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%2010">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 11 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 11"><div class="info"><h2>رسيفر موديل 11</h2><div class="price">600&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%2011">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 12 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 12"><div class="info"><h2>رسيفر موديل 12</h2><div class="price">610&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%2012">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 13 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 13"><div class="info"><h2>رسيفر موديل 13</h2><div class="price">620&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%2013">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 14 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 14"><div class="info"><h2>رسيفر موديل 14</h2><div class="price">630&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%2014">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 15 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 15"><div class="info"><h2>رسيفر موديل 15</h2><div class="price">640&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%2015">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 16 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 16"><div class="info"><h2>رسيفر موديل 16</h2><div class="price">650&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%2016">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 17 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 17"><div class="info"><h2>رسيفر موديل 17</h2><div class="price">660&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%2017">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 18 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 18"><div class="info"><h2>رسيفر موديل 18</h2><div class="price">670&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%2018">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 19 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 19"><div class="info"><h2>رسيفر موديل 19</h2><div class="price">680&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%2019">اشترِ الآن عبر واتساب</a></div>
-
-    <!-- 20 -->
-    <div class="product"><img src="https://j.top4top.io/p_34726dep71.png" alt="رسيفر موديل 20"><div class="info"><h2>رسيفر موديل 20</h2><div class="price">690&nbsp;جنيه</div><div class="note">✅ شحن ودفع عند الاستلام</div></div><a class="buy-btn" href="https://wa.me/201005854984?text=أرغب%20في%20شراء%20رسيفر%20موديل%2020">اشترِ الآن عبر واتساب</a></div>
-
+    <!-- انسخ هذا البلوك وغير الصورة والاسم والسعر لعمل 20 منتج -->
+    
   </div>
 </div>
 
